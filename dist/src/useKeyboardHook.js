@@ -21,7 +21,7 @@ const useKeyboard = ({ android }) => {
         };
     }, []);
     //whether to return keyboard offset in android or not
-    const keyboardHeight = android ? keyboardOffset : 0;
+    const keyboardHeight = react_native_1.Platform.OS === "android" ? android ? keyboardOffset : 0 : keyboardOffset;
     return { isKeyboardVisible: keyboardVisible, keyboardOffset: keyboardHeight };
 };
 exports.default = useKeyboard;

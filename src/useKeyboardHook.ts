@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Keyboard } from "react-native";
+import { Keyboard, Platform } from "react-native";
 
 type UseKeyboardHookReturnType = {
 	/** Whether keyboard is visible or not at any given time */
@@ -41,7 +41,7 @@ const useKeyboard = ({android}: UseKeyboardHookType): UseKeyboardHookReturnType 
 	}, []);
 
 	//whether to return keyboard offset in android or not
-	const keyboardHeight = android ? keyboardOffset : 0;
+	const keyboardHeight =  Platform.OS === "android" ? android ? keyboardOffset : 0 : keyboardOffset;
 	return { isKeyboardVisible: keyboardVisible, keyboardOffset: keyboardHeight };
 };
 
