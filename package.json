@@ -1,6 +1,6 @@
 {
   "name": "react-native-keyboard-aware",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Custom hook to track the visibility and offset of the keyboard in a React Native application.",
   "main": "dist/index.js",
   "scripts": {
