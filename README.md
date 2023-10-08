@@ -2,8 +2,9 @@
 Tired of dealing with the inconsistent behavior of KeyboardAvoidingView in React Native? Introducing react-native-keyboard-aware, a lightweight npm package designed to seamlessly manage the keyboard state and provide accurate keyboard offsets for your React Native applications.
 
 # Installation
-
+```
 npm i --save react-native-keyboard-aware
+```
 
 # Features
 
